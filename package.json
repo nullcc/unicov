@@ -1,6 +1,6 @@
 {
   "name": "@nullcc/unicov",
-  "version": "1.4.2",
+  "version": "1.4.3",
   "description": "Transforms coverage into an unify coverage format.",
   "main": "lib/index.js",
   "types": "lib/types/index.d.ts",
