@@ -29,6 +29,9 @@ export class CoberturaFileCoverage implements FileCoverage {
               lineMap: {},
             };
             cls.lines.forEach(line => {
+              if (!line.line) {
+                return;
+              }
               line.line.forEach(line => {
                 const lineNumber = parseInt(line.$.number);
                 const hits = parseInt(line.$.hits);
