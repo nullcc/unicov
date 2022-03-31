@@ -8,6 +8,7 @@ Supported coverage reporter types:
 * cobertura
 * jacoco
 * xccov
+* bullseye
 * auto (unicov will detect coverage type automatically)
 
 ## Installation
@@ -52,9 +53,9 @@ import { Unicov } from '@nullcc/unicov';
 
 const coverageFiles = [
   './json-coverage.json',
-  './jacoco-coverage.xml',
-  './cobertura-coverage.xml',
-  './xccov-coverage.xml'
+  './jacoco-empty-cobertura-coverage.xml',
+  './cobertura-empty-cobertura-coverage.xml',
+  './xccov-empty-cobertura-coverage.xml'
 ];
 
 const unicov = await Unicov.fromCoverages(coverageFiles, 'auto');

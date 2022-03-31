@@ -16,19 +16,32 @@ describe('Test Unicov.', () => {
     expect(commonCoverage).toEqual(JSON.parse(commonCoverageContent));
   });
 
+  test('Test fromCoverage by empty cobertura reporter.', async () => {
+    const unicov = await Unicov.fromCoverage('./test/fixtures/empty-cobertura-coverage.xml', 'cobertura');
+    const commonCoverage = unicov.getCoverageData();
+    expect(commonCoverage).toEqual({});
+  });
+
   test('Test fromCoverage by jacoco reporter.', async () => {
     const unicov = await Unicov.fromCoverage('./test/fixtures/jacoco-coverage.xml', 'jacoco');
     const commonCoverage = unicov.getCoverageData();
-    const commonCoverageContent = fs.readFileSync('./test/fixtures/jacoco-coverage.json').toString();
+    const commonCoverageContent = fs.readFileSync('./test/fixtures/common-jacoco-coverage.json').toString();
     expect(commonCoverage).toEqual(JSON.parse(commonCoverageContent));
   });
 
   test('Test fromCoverage by xccov reporter.', async () => {
     const unicov = await Unicov.fromCoverage('./test/fixtures/xccov-coverage.xml', 'xccov');
     const commonCoverage = unicov.getCoverageData();
-    const commonCoverageContent = fs.readFileSync('./test/fixtures/xccov-coverage.json').toString();
+    const commonCoverageContent = fs.readFileSync('./test/fixtures/common-xccov-coverage.json').toString();
     expect(commonCoverage).toEqual(JSON.parse(commonCoverageContent));
   });
+
+  // test('Test fromCoverage by bullseye reporter.', async () => {
+  //   const unicov = await Unicov.fromCoverage('./test/fixtures/bullseye-coverage.xml', 'bullseye');
+  //   const commonCoverage = unicov.getCoverageData();
+  //   const commonCoverageContent = fs.readFileSync('./test/fixtures/common-bullseye-coverage.json').toString();
+  //   expect(commonCoverage).toEqual(JSON.parse(commonCoverageContent));
+  // });
 
   test('Test fromCoverage by json reporter with option "caseSensitive" is false.', async () => {
     const unicov = await Unicov.fromCoverage('./test/fixtures/json-coverage.json', 'json', { caseInsensitive: true });
@@ -53,13 +66,13 @@ describe('Test Unicov.', () => {
     // jacoco => json
     const unicovJacoco = await Unicov.fromCoverage('./test/fixtures/jacoco-coverage.xml', 'auto');
     const commonCoverageJacoco = unicovJacoco.getCoverageData();
-    const commonCoverageContentJacoco = fs.readFileSync('./test/fixtures/jacoco-coverage.json').toString();
+    const commonCoverageContentJacoco = fs.readFileSync('./test/fixtures/common-jacoco-coverage.json').toString();
     expect(commonCoverageJacoco).toEqual(JSON.parse(commonCoverageContentJacoco));
 
     // auto => xccov
     const unicovXccov = await Unicov.fromCoverage('./test/fixtures/xccov-coverage.xml', 'auto');
     const commonCoverageXccov = unicovXccov.getCoverageData();
-    const commonCoverageContentXccov = fs.readFileSync('./test/fixtures/xccov-coverage.json').toString();
+    const commonCoverageContentXccov = fs.readFileSync('./test/fixtures/common-xccov-coverage.json').toString();
     expect(commonCoverageXccov).toEqual(JSON.parse(commonCoverageContentXccov));
   });
 
@@ -124,7 +137,6 @@ describe('Test Unicov.', () => {
     ];
     const unicov = await Unicov.fromCoverages(coverageFiles, 'auto');
     const commonCoverage = unicov.getCoverageData();
-    console.log(JSON.stringify(commonCoverage, null, 2));
     const commonCoverageContent = fs.readFileSync('./test/fixtures/coverage-auto-merged.json').toString();
     expect(commonCoverage).toEqual(JSON.parse(commonCoverageContent));
   });

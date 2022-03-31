@@ -20,6 +20,9 @@ export class CoberturaFileCoverage implements FileCoverage {
     const packages = data.coverage.packages;
     const commonCoverage = {};
     for (const pkg_ of packages) {
+      if (typeof pkg_ !== 'object') {
+        continue;
+      }
       for (const pkg of pkg_.package) {
         for (const cls_ of pkg.classes) {
           for (const cls of cls_.class) {
