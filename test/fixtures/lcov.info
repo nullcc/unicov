@@ -1,0 +1,17 @@
+TN:Unit Tests
+SF:/path/to/source.cpp
+DA:1,3
+DA:2,3
+DA:3,3
+DA:4,1
+DA:5,0
+BRDA:1,0,0,1
+BRDA:1,1,1,2
+BRDA:2,0,0,1
+BRDA:3,0,0,-
+end_of_record
+SF:/path/second/my_file.cpp
+DA:1,3
+DA:2,3
+DA:3,3
+end_of_record

@@ -1,72 +1,89 @@
 {
-  "$PROJECT_PATH/src/calc.ts": {
-    "path": "$PROJECT_PATH/src/calc.ts",
-    "lineMap": {
-      "2": {
-        "number": 2,
-        "hits": 1
-      },
-      "3": {
-        "number": 3,
-        "hits": 1
-      },
-      "4": {
-        "number": 4,
-        "hits": 1
-      },
-      "5": {
-        "number": 5,
-        "hits": 1
-      },
-      "9": {
-        "number": 9,
-        "hits": 1
-      },
-      "13": {
-        "number": 13,
-        "hits": 2
-      },
-      "17": {
-        "number": 17,
-        "hits": 2
-      },
-      "18": {
-        "number": 18,
-        "hits": 1
-      },
-      "20": {
-        "number": 20,
-        "hits": 1
-      },
-      "24": {
-        "number": 24,
-        "hits": 1
-      },
-      "25": {
-        "number": 25,
-        "hits": 1
-      },
-      "26": {
-        "number": 26,
-        "hits": 1
-      },
-      "27": {
-        "number": 27,
-        "hits": 1
-      }
+  "files": [
+    {
+      "path": "$PROJECT_PATH/src/calc.ts",
+      "lines": [
+        {
+          "number": 2,
+          "hits": 1,
+          "branches": []
+        },
+        {
+          "number": 3,
+          "hits": 1,
+          "branches": []
+        },
+        {
+          "number": 4,
+          "hits": 1,
+          "branches": []
+        },
+        {
+          "number": 5,
+          "hits": 1,
+          "branches": []
+        },
+        {
+          "number": 24,
+          "hits": 1,
+          "branches": []
+        },
+        {
+          "number": 9,
+          "hits": 1,
+          "branches": []
+        },
+        {
+          "number": 25,
+          "hits": 1,
+          "branches": []
+        },
+        {
+          "number": 13,
+          "hits": 2,
+          "branches": []
+        },
+        {
+          "number": 26,
+          "hits": 1,
+          "branches": []
+        },
+        {
+          "number": 17,
+          "hits": 2,
+          "branches": []
+        },
+        {
+          "number": 18,
+          "hits": 1,
+          "branches": []
+        },
+        {
+          "number": 20,
+          "hits": 1,
+          "branches": []
+        },
+        {
+          "number": 27,
+          "hits": 1,
+          "branches": []
+        }
+      ]
+    },
+    {
+      "path": "$PROJECT_PATH/tools/print.ts",
+      "lines": [
+        {
+          "number": 2,
+          "hits": 1,
+          "branches": []
+        },
+        {
+          "number": 6,
+          "hits": 1,
+          "branches": []
+        }
+      ]
     }
-  },
-  "$PROJECT_PATH/tools/print.ts": {
-    "path": "$PROJECT_PATH/tools/print.ts",
-    "lineMap": {
-      "2": {
-        "number": 2,
-        "hits": 1
-      },
-      "6": {
-        "number": 6,
-        "hits": 1
-      }
-    }
-  }
+  ]
 }

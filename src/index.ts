@@ -1,13 +1,8 @@
-import { Unicov } from './common/unicov';
+import { Unicov } from "./common/unicov";
 import {
   CoverageReporterType,
-  FileCoverageOptions,
-  CommonCoverageMapData,
-} from './common/interface';
+  ParseOptions,
+  CommonCoverage,
+} from "./common/interface";
 
-export {
-  Unicov,
-  CoverageReporterType,
-  FileCoverageOptions,
-  CommonCoverageMapData,
-}
+export { Unicov, CoverageReporterType, ParseOptions, CommonCoverage };

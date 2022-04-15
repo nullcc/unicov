@@ -11,7 +11,7 @@ export interface CoverageData {
         $: {
           lineNumber: string;
           covered: string;
-        }
+        };
       }[];
     }[];
   };

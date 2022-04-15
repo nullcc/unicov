@@ -240,25 +240,28 @@
           }
         },
         "type": "if",
-        "locations": [{
-          "start": {
-            "line": 17,
-            "column": 2
+        "locations": [
+          {
+            "start": {
+              "line": 17,
+              "column": 2
+            },
+            "end": {
+              "line": 19,
+              "column": null
+            }
           },
-          "end": {
-            "line": 19,
-            "column": null
+          {
+            "start": {
+              "line": 17,
+              "column": 2
+            },
+            "end": {
+              "line": 19,
+              "column": null
+            }
           }
-        }, {
-          "start": {
-            "line": 17,
-            "column": 2
-          },
-          "end": {
-            "line": 19,
-            "column": null
-          }
-        }]
+        ]
       }
     },
     "s": {

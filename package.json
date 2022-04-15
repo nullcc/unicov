@@ -4,17 +4,24 @@
   "description": "Transforms coverage into an unify coverage format.",
   "main": "lib/index.js",
   "types": "lib/types/index.d.ts",
+  "bin": {
+    "unicov": "lib/main.js"
+  },
   "scripts": {
     "test": "jest --coverage",
+    "test-update-snapshots": "UPDATE_SNAPSHOTS=1 jest",
     "build": "tsc",
+    "lint": "npm run prettier-check",
     "prepare": "npm run build",
-    "postversion": "git push && git push --tags"
+    "postversion": "git push && git push --tags",
+    "prettier": "prettier -w ./src ./test",
+    "prettier-check": "prettier -c ./src ./test"
   },
   "author": "Ethan Zhang",
   "license": "MIT",
   "husky": {
     "hooks": {
-      "pre-commit": "npm test"
+      "pre-commit": "npm test && npm run lint"
     }
   },
   "devDependencies": {
@@ -22,8 +29,11 @@
     "@types/jest": "^27.0.1",
     "@types/lodash": "^4.14.172",
     "@types/node": "^16.11.6",
+    "@types/rimraf": "^3.0.2",
     "@types/xml2js": "^0.4.9",
     "jest": "^27.1.0",
+    "prettier": "^2.6.2",
+    "rimraf": "^3.0.2",
     "ts-jest": "^27.0.5",
     "typescript": "^4.4.2"
   },
@@ -33,6 +43,8 @@
     "istanbul-lib-source-maps": "^4.0.0",
     "lodash": "^4.17.21",
     "source-map": "^0.7.3",
-    "xml2js": "^0.4.23"
+    "xml2js": "^0.4.23",
+    "xmlbuilder2": "^3.0.2",
+    "yargs": "^17.4.1"
   }
 }

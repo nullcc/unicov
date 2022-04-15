@@ -1,39 +1,49 @@
 {
-  "/a/b/c.swift": {
-    "path": "/a/b/c.swift",
-    "lineMap": {
-      "15": {
-        "lineNumber": 15,
-        "hits": 1
-      },
-      "16": {
-        "lineNumber": 16,
-        "hits": 1
-      },
-      "17": {
-        "lineNumber": 17,
-        "hits": 1
-      },
-      "18": {
-        "lineNumber": 18,
-        "hits": 1
-      },
-      "19": {
-        "lineNumber": 19,
-        "hits": 0
-      },
-      "21": {
-        "lineNumber": 21,
-        "hits": 0
-      },
-      "24": {
-        "lineNumber": 24,
-        "hits": 0
-      },
-      "25": {
-        "lineNumber": 25,
-        "hits": 0
-      }
+  "files": [
+    {
+      "path": "/a/b/c.swift",
+      "lines": [
+        {
+          "number": 15,
+          "hits": 1,
+          "branches": []
+        },
+        {
+          "number": 16,
+          "hits": 1,
+          "branches": []
+        },
+        {
+          "number": 17,
+          "hits": 1,
+          "branches": []
+        },
+        {
+          "number": 18,
+          "hits": 1,
+          "branches": []
+        },
+        {
+          "number": 19,
+          "hits": 0,
+          "branches": []
+        },
+        {
+          "number": 21,
+          "hits": 0,
+          "branches": []
+        },
+        {
+          "number": 24,
+          "hits": 0,
+          "branches": []
+        },
+        {
+          "number": 25,
+          "hits": 0,
+          "branches": []
+        }
+      ]
     }
-  }
+  ]
 }

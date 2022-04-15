@@ -64,6 +64,8 @@
             <counter type="METHOD" missed="4" covered="1"/>
             <counter type="CLASS" missed="0" covered="1"/>
         </sourcefile>
+        <sourcefile name="Empty.java">
+        </sourcefile>
         <counter type="INSTRUCTION" missed="30" covered="10"/>
         <counter type="BRANCH" missed="3" covered="1"/>
         <counter type="LINE" missed="10" covered="3"/>

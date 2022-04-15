@@ -1,14 +1,17 @@
 # unicov
 
-Transforms coverage into an unify coverage format.
+A universal translator for code coverage data, offering a CLI tool (unicov) and a programmatic API for parsing and formatting coverage files.
 
-Supported coverage reporter types:
+Supported coverage formats:
 
-* json
+* auto<sup>[1]</sup>
 * cobertura
 * jacoco
+* json
+* lcov
 * xccov
-* auto (unicov will detect coverage type automatically)
+
+[1] unicov will detect coverage type automatically
 
 ## Installation
 
@@ -16,7 +19,21 @@ Supported coverage reporter types:
 $ npm i @nullcc/unicov
 ```
 
-## Usage
+## CLI Usage
+
+```
+unicov [-o <format(:path)>] [input_file] ([input file]...)
+
+# Parses XML coverage files and writes unified output to "coverage.lcov"
+
+# Parse files and write Jacoco-formatted output to: `./coverage.xml`
+unicov -o jacoco app/_coverage/*.xml
+
+# Parse files and write Cobertura-formatted output to `./app_coverage.xml`
+unicov -o cobertura:app_coverage.xml *.lcov
+```
+
+## API Usage
 
 Parsing single coverage in a specific type coverage:
 
@@ -68,3 +85,7 @@ const commonCoverage = unicov.getCoverageData();
 ```shell script
 $ npm publish --access public
 ```
+
+## License
+
+MIT
