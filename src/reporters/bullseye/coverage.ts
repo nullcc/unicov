@@ -12,7 +12,7 @@ export class BullseyeFileCoverage implements FileCoverage {
   async into(coverageFile: string, options: FileCoverageOptions = {}): Promise<CommonCoverageMapData> {
     const content = util.readFile(coverageFile);
     if (!this.check(content)) {
-      throw new Error(`Invalid cobertura coverage reporter: ${coverageFile}`);
+      throw new Error(`Invalid bullseye coverage reporter: ${coverageFile}`);
     }
     const data: BullseyeCoverageData = await util.xml2json(content);
     const caseInsensitive = !!options.caseInsensitive;
