@@ -9,7 +9,7 @@ import { JsonFileCoverage } from '../reporters/json/coverage';
 import { CoberturaFileCoverage } from '../reporters/cobertura/coverage';
 import { JacocoFileCoverage } from '../reporters/jacoco/coverage';
 import { XccovFileCoverage } from '../reporters/xccov/coverage';
-import { BullseyeFileCoverage } from '../reporters/bullseye/coverage';
+import { CloverFileCoverage } from '../reporters/clover/coverage';
 import * as util from '../util';
 
 export class Unicov {
@@ -71,10 +71,10 @@ export class Unicov {
         unicov.setCoverageData(coverageData);
         return unicov;
       }
-      case 'bullseye': {
+      case 'clover': {
         const unicov = new Unicov();
-        const bullseyeFileCoverage = new BullseyeFileCoverage();
-        const coverageData = await bullseyeFileCoverage.into(coverageFile, options);
+        const cloverFileCoverage = new CloverFileCoverage();
+        const coverageData = await cloverFileCoverage.into(coverageFile, options);
         unicov.setCoverageData(coverageData);
         return unicov;
       }
