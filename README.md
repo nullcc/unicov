@@ -8,7 +8,7 @@ Supported coverage reporter types:
 * cobertura
 * jacoco
 * xccov
-* bullseye
+* clover
 * auto (unicov will detect coverage type automatically)
 
 ## Installation

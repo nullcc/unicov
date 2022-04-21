@@ -34,7 +34,7 @@ export class CloverFileCoverage implements FileCoverage {
               number: lineNumber,
               hits,
             };
-          })
+          });
         }
       }
     }
