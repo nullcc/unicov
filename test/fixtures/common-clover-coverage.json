@@ -1,0 +1,248 @@
+{
+  "/home/project/a.js": {
+    "path": "/home/project/a.js",
+    "lineMap": {
+      "19": {
+        "number": 19,
+        "hits": 25
+      },
+      "28": {
+        "number": 28,
+        "hits": 25
+      },
+      "29": {
+        "number": 29,
+        "hits": 2
+      },
+      "32": {
+        "number": 32,
+        "hits": 25
+      },
+      "33": {
+        "number": 33,
+        "hits": 1
+      },
+      "34": {
+        "number": 34,
+        "hits": 1
+      },
+      "35": {
+        "number": 35,
+        "hits": 1
+      },
+      "42": {
+        "number": 42,
+        "hits": 25
+      },
+      "43": {
+        "number": 43,
+        "hits": 0
+      },
+      "46": {
+        "number": 46,
+        "hits": 25
+      },
+      "54": {
+        "number": 54,
+        "hits": 25
+      },
+      "55": {
+        "number": 55,
+        "hits": 1
+      },
+      "56": {
+        "number": 56,
+        "hits": 1
+      },
+      "59": {
+        "number": 59,
+        "hits": 28
+      },
+      "63": {
+        "number": 63,
+        "hits": 25
+      },
+      "67": {
+        "number": 67,
+        "hits": 25
+      },
+      "71": {
+        "number": 71,
+        "hits": 25
+      },
+      "72": {
+        "number": 72,
+        "hits": 1
+      },
+      "73": {
+        "number": 73,
+        "hits": 1
+      },
+      "75": {
+        "number": 75,
+        "hits": 1
+      },
+      "76": {
+        "number": 76,
+        "hits": 1
+      },
+      "77": {
+        "number": 77,
+        "hits": 1
+      },
+      "78": {
+        "number": 78,
+        "hits": 1
+      },
+      "80": {
+        "number": 80,
+        "hits": 1
+      },
+      "81": {
+        "number": 81,
+        "hits": 1
+      },
+      "85": {
+        "number": 85,
+        "hits": 25
+      },
+      "86": {
+        "number": 86,
+        "hits": 1
+      },
+      "87": {
+        "number": 87,
+        "hits": 0
+      },
+      "89": {
+        "number": 89,
+        "hits": 1
+      },
+      "93": {
+        "number": 93,
+        "hits": 25
+      },
+      "97": {
+        "number": 97,
+        "hits": 25
+      },
+      "98": {
+        "number": 98,
+        "hits": 1
+      },
+      "101": {
+        "number": 101,
+        "hits": 25
+      },
+      "102": {
+        "number": 102,
+        "hits": 1
+      },
+      "105": {
+        "number": 105,
+        "hits": 25
+      },
+      "106": {
+        "number": 106,
+        "hits": 1
+      },
+      "109": {
+        "number": 109,
+        "hits": 25
+      },
+      "110": {
+        "number": 110,
+        "hits": 3
+      },
+      "111": {
+        "number": 111,
+        "hits": 3
+      },
+      "112": {
+        "number": 112,
+        "hits": 3
+      },
+      "114": {
+        "number": 114,
+        "hits": 3
+      },
+      "115": {
+        "number": 115,
+        "hits": 1
+      },
+      "116": {
+        "number": 116,
+        "hits": 2
+      },
+      "117": {
+        "number": 117,
+        "hits": 1
+      },
+      "119": {
+        "number": 119,
+        "hits": 1
+      },
+      "122": {
+        "number": 122,
+        "hits": 43
+      },
+      "127": {
+        "number": 127,
+        "hits": 25
+      },
+      "131": {
+        "number": 131,
+        "hits": 25
+      },
+      "135": {
+        "number": 135,
+        "hits": 25
+      },
+      "136": {
+        "number": 136,
+        "hits": 1
+      },
+      "137": {
+        "number": 137,
+        "hits": 1
+      },
+      "140": {
+        "number": 140,
+        "hits": 25
+      },
+      "141": {
+        "number": 141,
+        "hits": 0
+      },
+      "144": {
+        "number": 144,
+        "hits": 25
+      },
+      "145": {
+        "number": 145,
+        "hits": 3
+      }
+    }
+  },
+  "/home/project/b.js": {
+    "path": "/home/project/b.js",
+    "lineMap": {
+      "3": {
+        "number": 3,
+        "hits": 22
+      },
+      "8": {
+        "number": 8,
+        "hits": 22
+      },
+      "13": {
+        "number": 13,
+        "hits": 22
+      }
+    }
+  },
+  "/home/c.js": {
+    "path": "/home/c.js",
+    "lineMap": {}
+  }
+}
