@@ -43,6 +43,13 @@ describe('Test Unicov.', () => {
     expect(commonCoverage).toEqual(JSON.parse(commonCoverageContent));
   });
 
+  test('Test fromCoverage by llvm-cov reporter.', async () => {
+    const unicov = await Unicov.fromCoverage('./test/fixtures/llvm-cov.json', 'llvm-cov');
+    const commonCoverage = unicov.getCoverageData();
+    const commonCoverageContent = fs.readFileSync('./test/fixtures/common-llvm-cov-coverage.json').toString();
+    expect(commonCoverage).toEqual(JSON.parse(commonCoverageContent));
+  });
+
   test('Test fromCoverage by json reporter with option "caseSensitive" is false.', async () => {
     const unicov = await Unicov.fromCoverage('./test/fixtures/json-coverage.json', 'json', { caseInsensitive: true });
     const commonCoverage = unicov.getCoverageData();

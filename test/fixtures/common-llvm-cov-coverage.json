@@ -1,0 +1,351 @@
+{
+  "/Users/milly.zheng/Desktop/millySwift/millySwift/AppDelegate.swift": {
+    "path": "/Users/milly.zheng/Desktop/millySwift/millySwift/AppDelegate.swift",
+    "lineMap": {
+      "15": {
+        "number": 15,
+        "hits": 2
+      },
+      "16": {
+        "number": 16,
+        "hits": 2
+      },
+      "17": {
+        "number": 17,
+        "hits": 2
+      },
+      "18": {
+        "number": 18,
+        "hits": 2
+      },
+      "19": {
+        "number": 19,
+        "hits": 2
+      },
+      "23": {
+        "number": 23,
+        "hits": 1
+      },
+      "24": {
+        "number": 24,
+        "hits": 1
+      },
+      "25": {
+        "number": 25,
+        "hits": 1
+      },
+      "26": {
+        "number": 26,
+        "hits": 1
+      },
+      "27": {
+        "number": 27,
+        "hits": 1
+      },
+      "29": {
+        "number": 29,
+        "hits": 0
+      },
+      "30": {
+        "number": 30,
+        "hits": 0
+      },
+      "31": {
+        "number": 31,
+        "hits": 0
+      },
+      "32": {
+        "number": 32,
+        "hits": 0
+      },
+      "33": {
+        "number": 33,
+        "hits": 0
+      }
+    }
+  },
+  "/Users/milly.zheng/Desktop/millySwift/millySwift/HDCoverageTools.swift": {
+    "path": "/Users/milly.zheng/Desktop/millySwift/millySwift/HDCoverageTools.swift",
+    "lineMap": {
+      "19": {
+        "number": 19,
+        "hits": 2
+      },
+      "20": {
+        "number": 20,
+        "hits": 2
+      },
+      "21": {
+        "number": 21,
+        "hits": 2
+      },
+      "22": {
+        "number": 22,
+        "hits": 2
+      },
+      "23": {
+        "number": 23,
+        "hits": 2
+      },
+      "24": {
+        "number": 24,
+        "hits": 2
+      },
+      "25": {
+        "number": 25,
+        "hits": 2
+      },
+      "26": {
+        "number": 26,
+        "hits": 2
+      },
+      "27": {
+        "number": 27,
+        "hits": 2
+      },
+      "28": {
+        "number": 28,
+        "hits": 0
+      },
+      "29": {
+        "number": 29,
+        "hits": 0
+      },
+      "30": {
+        "number": 30,
+        "hits": 2
+      },
+      "31": {
+        "number": 31,
+        "hits": 2
+      },
+      "32": {
+        "number": 32,
+        "hits": 2
+      },
+      "35": {
+        "number": 35,
+        "hits": 3
+      },
+      "36": {
+        "number": 36,
+        "hits": 3
+      },
+      "37": {
+        "number": 37,
+        "hits": 3
+      },
+      "38": {
+        "number": 38,
+        "hits": 3
+      }
+    }
+  },
+  "/Users/milly.zheng/Desktop/millySwift/millySwift/SceneDelegate.swift": {
+    "path": "/Users/milly.zheng/Desktop/millySwift/millySwift/SceneDelegate.swift",
+    "lineMap": {
+      "15": {
+        "number": 15,
+        "hits": 1
+      },
+      "16": {
+        "number": 16,
+        "hits": 1
+      },
+      "17": {
+        "number": 17,
+        "hits": 1
+      },
+      "18": {
+        "number": 18,
+        "hits": 1
+      },
+      "19": {
+        "number": 19,
+        "hits": 1
+      },
+      "20": {
+        "number": 20,
+        "hits": 1
+      },
+      "22": {
+        "number": 22,
+        "hits": 0
+      },
+      "23": {
+        "number": 23,
+        "hits": 0
+      },
+      "24": {
+        "number": 24,
+        "hits": 0
+      },
+      "25": {
+        "number": 25,
+        "hits": 0
+      },
+      "26": {
+        "number": 26,
+        "hits": 0
+      },
+      "27": {
+        "number": 27,
+        "hits": 0
+      },
+      "29": {
+        "number": 29,
+        "hits": 0
+      },
+      "30": {
+        "number": 30,
+        "hits": 0
+      },
+      "31": {
+        "number": 31,
+        "hits": 0
+      },
+      "32": {
+        "number": 32,
+        "hits": 0
+      },
+      "34": {
+        "number": 34,
+        "hits": 0
+      },
+      "35": {
+        "number": 35,
+        "hits": 0
+      },
+      "36": {
+        "number": 36,
+        "hits": 0
+      },
+      "37": {
+        "number": 37,
+        "hits": 0
+      },
+      "39": {
+        "number": 39,
+        "hits": 0
+      },
+      "40": {
+        "number": 40,
+        "hits": 0
+      },
+      "41": {
+        "number": 41,
+        "hits": 0
+      },
+      "42": {
+        "number": 42,
+        "hits": 0
+      },
+      "44": {
+        "number": 44,
+        "hits": 0
+      },
+      "45": {
+        "number": 45,
+        "hits": 0
+      },
+      "46": {
+        "number": 46,
+        "hits": 0
+      },
+      "47": {
+        "number": 47,
+        "hits": 0
+      },
+      "48": {
+        "number": 48,
+        "hits": 0
+      }
+    }
+  },
+  "/Users/milly.zheng/Desktop/millySwift/millySwift/ViewController.swift": {
+    "path": "/Users/milly.zheng/Desktop/millySwift/millySwift/ViewController.swift",
+    "lineMap": {
+      "12": {
+        "number": 12,
+        "hits": 1
+      },
+      "13": {
+        "number": 13,
+        "hits": 1
+      },
+      "14": {
+        "number": 14,
+        "hits": 1
+      },
+      "15": {
+        "number": 15,
+        "hits": 1
+      },
+      "16": {
+        "number": 16,
+        "hits": 1
+      },
+      "19": {
+        "number": 19,
+        "hits": 1
+      },
+      "20": {
+        "number": 20,
+        "hits": 1
+      },
+      "21": {
+        "number": 21,
+        "hits": 1
+      },
+      "22": {
+        "number": 22,
+        "hits": 1
+      },
+      "23": {
+        "number": 23,
+        "hits": 1
+      },
+      "24": {
+        "number": 24,
+        "hits": 1
+      },
+      "25": {
+        "number": 25,
+        "hits": 1
+      },
+      "26": {
+        "number": 26,
+        "hits": 1
+      },
+      "27": {
+        "number": 27,
+        "hits": 1
+      },
+      "28": {
+        "number": 28,
+        "hits": 1
+      },
+      "29": {
+        "number": 29,
+        "hits": 1
+      }
+    }
+  },
+  "/Users/milly.zheng/Desktop/millySwift/millySwift/oc_test.m": {
+    "path": "/Users/milly.zheng/Desktop/millySwift/millySwift/oc_test.m",
+    "lineMap": {
+      "13": {
+        "number": 13,
+        "hits": 1
+      },
+      "14": {
+        "number": 14,
+        "hits": 1
+      },
+      "15": {
+        "number": 15,
+        "hits": 1
+      }
+    }
+  }
+}
