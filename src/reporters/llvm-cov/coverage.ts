@@ -27,6 +27,12 @@ export class LLVMCovFileCoverage implements FileCoverage {
         const segments = file.segments;
         const segmentLength = segments.length;
         segments.forEach((segment, index) => {
+          // https://github.com/llvm/llvm-project/blob/main/llvm/tools/llvm-cov/CoverageExporterJson.cpp#L80
+          // json::Array renderSegment(const coverage::CoverageSegment &Segment) {
+          //   return json::Array({Segment.Line, Segment.Col,
+          //     clamp_uint64_to_int64(Segment.Count), Segment.HasCount,
+          //     Segment.IsRegionEntry, Segment.IsGapRegion});
+          // }
           const [line, column, hits, hasCount, isRegionEntry, isGapRegion] = segment;
           if (!hasCount) {
             return;
