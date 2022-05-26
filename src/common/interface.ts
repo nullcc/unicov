@@ -2,7 +2,7 @@ export interface FileCoverageOptions {
   caseInsensitive?: boolean;
 }
 
-export type CoverageReporterType = 'json' | 'cobertura' | 'jacoco' | 'xccov' | 'clover';
+export type CoverageReporterType = 'json' | 'cobertura' | 'jacoco' | 'xccov' | 'clover' | 'llvm-cov';
 
 export interface CommonCoverageMapData {
   [key: string]: CommonCoverageData;

@@ -10,6 +10,7 @@ import { CoberturaFileCoverage } from '../reporters/cobertura/coverage';
 import { JacocoFileCoverage } from '../reporters/jacoco/coverage';
 import { XccovFileCoverage } from '../reporters/xccov/coverage';
 import { CloverFileCoverage } from '../reporters/clover/coverage';
+import { LLVMCovFileCoverage } from '../reporters/llvm-cov/coverage';
 import * as util from '../util';
 
 export class Unicov {
@@ -23,8 +24,13 @@ export class Unicov {
    * Get Unicov instance by coverage files and coverage reporter type.
    * @param coverageFiles
    * @param reporterType
+   * @param options
    */
-  static async fromCoverages(coverageFiles: string[], reporterType: CoverageReporterType | 'auto', options: FileCoverageOptions = {}): Promise<Unicov> {
+  static async fromCoverages(
+    coverageFiles: string[],
+    reporterType: CoverageReporterType | 'auto',
+    options: FileCoverageOptions = {},
+  ): Promise<Unicov> {
     const coverages = await Promise.all(coverageFiles.map(async file => Unicov.fromCoverage(file, reporterType, options)));
     return Unicov.merge(coverages);
   }
@@ -33,8 +39,13 @@ export class Unicov {
    * Get Unicov instance by coverage file and coverage reporter type.
    * @param coverageFile
    * @param reporterType
+   * @param options
    */
-  static async fromCoverage(coverageFile: string, reporterType: CoverageReporterType | 'auto', options: FileCoverageOptions = {}): Promise<Unicov> {
+  static async fromCoverage(
+    coverageFile: string,
+    reporterType: CoverageReporterType | 'auto',
+    options: FileCoverageOptions = {},
+  ): Promise<Unicov> {
     if (!util.checkFileExistence(coverageFile)) {
       throw new Error(`Coverage file not found: ${coverageFile}!`);
     }
@@ -75,6 +86,13 @@ export class Unicov {
         const unicov = new Unicov();
         const cloverFileCoverage = new CloverFileCoverage();
         const coverageData = await cloverFileCoverage.into(coverageFile, options);
+        unicov.setCoverageData(coverageData);
+        return unicov;
+      }
+      case 'llvm-cov': {
+        const unicov = new Unicov();
+        const llvmCovFileCoverage = new LLVMCovFileCoverage();
+        const coverageData = await llvmCovFileCoverage.into(coverageFile, options);
         unicov.setCoverageData(coverageData);
         return unicov;
       }
